@@ -3,7 +3,6 @@ import ruralBg from '../assets/rural_bg.png'
 import Container from '../assets/Container.png'
 
 import Header from '../component/Header'
-import TravelCard from '../component/TravelCard'
 
 const LandingPage = () => {
     return (
@@ -23,9 +22,6 @@ const LandingPage = () => {
                             alt="Travel Composition"
                             className="max-w-full h-auto object-contain scale-110 lg:scale-125 transform translate-x-4 lg:translate-x-10 "
                         />
-
-                        {/* Demo of TravelCard - absolute positioned to emulate being part of the composition or just placed here */}
-                     
 
                     </div>
 

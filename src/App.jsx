@@ -4,6 +4,7 @@ import bg1 from './assets/Background.png'
 import bg2 from './assets/Background (1).png'
 import bg3 from './assets/Background (2).png'
 import bg4 from './assets/Background (3).png'
+import GettoKnowUs from './pages/GettoKnowUs'
 
 function App() {
 
@@ -17,7 +18,8 @@ function App() {
   return (
     <div>
       <LandingPage />
-      <div className="container mx-auto px-4 py-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+      {/* Desktop View: Grid */}
+      <div className="container mx-auto px-4 py-10 hidden md:grid md:grid-cols-2 lg:grid-cols-4 gap-6">
         {cards.map((card, index) => (
           <TravelCard
             key={index}
@@ -27,6 +29,33 @@ function App() {
           />
         ))}
       </div>
+
+      {/* Mobile View: Infinite Carousel (Left to Right) */}
+      <div className="md:hidden w-full overflow-hidden py-10">
+        <div className="flex gap-6 animate-marquee-reverse w-max">
+          {/* Original Set */}
+          {cards.map((card, index) => (
+            <div key={`mobile-${index}`} className="w-72 shrink-0">
+              <TravelCard
+                image={card.image}
+                title={card.title}
+                description={card.description}
+              />
+            </div>
+          ))}
+          {/* Duplicate Set for Loop */}
+          {cards.map((card, index) => (
+            <div key={`mobile-dup-${index}`} className="w-72 shrink-0">
+              <TravelCard
+                image={card.image}
+                title={card.title}
+                description={card.description}
+              />
+            </div>
+          ))}
+        </div>
+      </div>
+      <GettoKnowUs />
     </div>
   )
 }
