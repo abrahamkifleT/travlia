@@ -1,18 +1,9 @@
-import React from 'react'
 import ruralBg from '../assets/rural_bg.png'
-import Background1 from '../assets/Background-1.png'
-import Background2 from '../assets/Background-2.png'
-import BackgroundMain from '../assets/Background.png'
-import Border1 from '../assets/Border-1.png'
-import Border from '../assets/Border.png'
-import landingImg from '../assets/Overlay+Border+Shadow.png'
-import Hr2_2 from '../assets/hr2.2.webp.png'
-import Hr2_3 from '../assets/hr2.3.webp.png'
-import Hr2_4 from '../assets/hr2.4.webp.png'
-import Logo1 from '../assets/logo-1.png'
+
 import Container from '../assets/Container.png'
 
 import Header from '../component/Header'
+import TravelCard from '../component/TravelCard'
 
 const LandingPage = () => {
     return (
@@ -25,13 +16,16 @@ const LandingPage = () => {
             <div className="relative z-10 w-full h-full flex flex-col ">
                 <Header />
 
-                <div className="flex-1 container mx-auto px-4 flex flex-col lg:flex-row items-center justify-between gap-2 md:mx-20 md:mt-20">
+                <div className="flex-1 container mx-auto px-4 flex flex-col lg:flex-row items-center justify-center lg:justify-between gap-10 lg:gap-2 md:mx-20 md:mt-20">
                     <div className="w-full lg:w-1/2 flex justify-center lg:justify-start relative">
                         <img
                             src={Container}
                             alt="Travel Composition"
                             className="max-w-full h-auto object-contain scale-110 lg:scale-125 transform translate-x-4 lg:translate-x-10 "
                         />
+
+                        {/* Demo of TravelCard - absolute positioned to emulate being part of the composition or just placed here */}
+                     
 
                     </div>
 
