@@ -26,13 +26,14 @@ const GetToKnowUs1 = () => {
             </div>
             <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 w-full'>
                 {cardData.map((card, index) => (
-                    <GetToKnowUsCard
-                        key={index}
-                        image={card.image}
-                        price={card.price}
-                        title={card.title}
-                        duration={card.duration}
-                    />
+                    <div key={index} className={index >= 3 ? "hidden md:block" : "block"}>
+                        <GetToKnowUsCard
+                            image={card.image}
+                            price={card.price}
+                            title={card.title}
+                            duration={card.duration}
+                        />
+                    </div>
                 ))}
             </div>
             <div className="mt-12 text-center text-gray-500 text-sm">
