@@ -5,6 +5,7 @@ import bg2 from './assets/Background (1).png'
 import bg3 from './assets/Background (2).png'
 import bg4 from './assets/Background (3).png'
 import GettoKnowUs from './pages/GettoKnowUs'
+import TopSelling from './pages/TopSelling'
 
 function App() {
 
@@ -56,6 +57,7 @@ function App() {
         </div>
       </div>
       <GettoKnowUs />
+      <TopSelling />
     </div>
   )
 }
