@@ -13,40 +13,40 @@ const GetToKnowUs2Card = ({
     return (
         <div className="bg-white rounded-[35px] shadow-xl overflow-hidden w-full max-w-[320px] font-['Poppins'] shrink-0 select-none">
             {/* Image Section */}
-            <div className="relative h-[250px]">
+            <div className="relative h-[200px]">
                 <img src={image} alt={title} className="w-full h-full object-cover" />
-                <div className="absolute -bottom-5 left-8 z-10">
-                    <div className="bg-[#0D333D] text-white px-6 py-2.5 rounded-full font-medium shadow-md">
+                <div className="absolute -bottom-3 left-6 z-10">
+                    <div className="bg-[#0D333D] text-white px-4 py-1.5 rounded-full font-medium shadow-md text-sm">
                         {price}
                     </div>
                 </div>
             </div>
 
             {/* Content Section */}
-            <div className="px-8 pt-10 pb-8">
-                <h3 className="text-2xl text-[#333] font-medium mb-6">
+            <div className="px-5 pt-6 pb-5">
+                <h3 className="text-lg text-[#333] font-medium mb-3">
                     {title}
                 </h3>
 
-                <div className="border-t border-gray-100 mb-4"></div>
+                <div className="border-t border-gray-100 mb-3"></div>
 
-                <div className="flex items-center gap-2 mb-4">
-                    <span className="font-bold text-gray-800">Destination:</span>
-                    <span className="text-gray-600">{destination}</span>
+                <div className="flex items-center gap-2 mb-3">
+                    <span className="font-bold text-gray-800 text-sm">Destination:</span>
+                    <span className="text-gray-600 text-sm">{destination}</span>
                 </div>
 
-                <div className="border-t border-gray-100 mb-4"></div>
+                <div className="border-t border-gray-100 mb-3"></div>
 
-                <div className="flex justify-between items-center mb-6">
-                    <span className="text-gray-800 font-medium">{duration}</span>
-                    <div className="flex gap-4 text-gray-400">
-                        <FaHotel className="text-lg" />
-                        <FaCar className="text-lg" />
-                        <FaUtensils className="text-lg" />
+                <div className="flex justify-between items-center mb-4">
+                    <span className="text-gray-800 font-medium text-sm">{duration}</span>
+                    <div className="flex gap-3 text-gray-400">
+                        <FaHotel className="text-base" />
+                        <FaCar className="text-base" />
+                        <FaUtensils className="text-base" />
                     </div>
                 </div>
 
-                <p className="text-gray-500 text-sm leading-relaxed mb-8">
+                <p className="text-gray-500 text-xs leading-relaxed mb-4">
                     {description}
                 </p>
 
@@ -54,7 +54,7 @@ const GetToKnowUs2Card = ({
                     <Button
                         title="EXPLORE TRIP"
                         color="#0D333D"
-                        className="w-full justify-center py-4 text-sm tracking-wide"
+                        className="w-full justify-center py-2.5 text-xs tracking-wide"
                     />
                 </div>
             </div>
