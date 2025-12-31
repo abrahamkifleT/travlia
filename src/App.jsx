@@ -8,6 +8,7 @@ import GettoKnowUs from './pages/GettoKnowUs'
 import TopSelling from './pages/TopSelling'
 import GetToKnowUs1 from './pages/GetToKnowUs1'
 import GetToKnowUs2 from './pages/GetToKnowUs2'
+import GetToKnowContainer from './pages/GetToKnowContainer'
 
 function App() {
 
@@ -62,6 +63,7 @@ function App() {
       <TopSelling />
       <GetToKnowUs1 />
       <GetToKnowUs2 />
+      <GetToKnowContainer />
     </div>
   )
 }
