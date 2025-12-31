@@ -21,7 +21,7 @@ const GettoKnowUs = () => {
                     <div className='mt-5 lg:mt-32'>
 
                         <div className='mt-5 lg:mt-10 mx-0 lg:mx-20'>
-                        
+
                             <p className='text-gray-500 mb-8 max-w-lg text-center lg:text-left mx-auto lg:mx-0'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem rem, deserunt libero vero est adipisci hic dolore saepe cupiditate quia?</p>
                             <div className='flex flex-col sm:flex-row justify-center lg:justify-start gap-10'>
                                 <div>

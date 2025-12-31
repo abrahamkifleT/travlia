@@ -71,19 +71,19 @@ const GetToKnowUs2 = () => {
 
     return (
         <div className="flex flex-col items-center py-10 bg-gray-50 min-h-screen">
-            <div className="flex flex-wrap justify-center gap-4 mb-10 w-full max-w-[1200px]">
-                <Button title="Multi Holiday" />
-                <Button title="F1 Holiday" color="#F4F6F8" />
-                <Button title="Overwater villa Holiday" color="#F4F6F8" />
-                <Button title="luxury Holiday" color="#F4F6F8" />
-                <Button title="skill Holiday" color="#F4F6F8" />
+            <div className="w-full overflow-x-auto [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none] flex justify-start md:justify-center gap-2 md:gap-4 mb-10 md:w-full max-w-[1200px] px-4 pb-2">
+                <Button title="Multi Holiday" className="whitespace-nowrap text-[10px] px-3 py-1.5 md:text-base md:px-6 md:py-2" />
+                <Button title="F1 Holiday" color="#F4F6F8" className="whitespace-nowrap text-[10px] px-3 py-1.5 md:text-base md:px-6 md:py-2" />
+                <Button title="Overwater villa Holiday" color="#F4F6F8" className="whitespace-nowrap text-[10px] px-3 py-1.5 md:text-base md:px-6 md:py-2" />
+                <Button title="luxury Holiday" color="#F4F6F8" className="whitespace-nowrap text-[10px] px-3 py-1.5 md:text-base md:px-6 md:py-2" />
+                <Button title="skill Holiday" color="#F4F6F8" className="whitespace-nowrap text-[10px] px-3 py-1.5 md:text-base md:px-6 md:py-2" />
             </div>
 
             <div className="relative w-full max-w-[1400px] flex items-center justify-center px-4">
                 {/* Left Arrow */}
                 <button
                     onClick={scrollLeft}
-                    className="absolute left-4 md:left-10 z-10 w-12 h-12 rounded-full bg-[#2C211A] flex items-center justify-center text-white shadow-lg hover:bg-black transition-colors"
+                    className="hidden md:flex absolute left-4 md:left-10 z-10 w-12 h-12 rounded-full bg-[#2C211A] items-center justify-center text-white shadow-lg hover:bg-black transition-colors"
                 >
                     <FaArrowLeft className="text-xl" />
                 </button>
@@ -91,11 +91,11 @@ const GetToKnowUs2 = () => {
                 {/* Scrollable Container */}
                 <div
                     ref={scrollContainerRef}
-                    className="flex gap-8 overflow-x-auto scrollbar-hide py-10 px-8 w-full snap-x"
+                    className="flex gap-4 md:gap-5 lg:gap-6 overflow-x-auto scrollbar-hide py-10 px-0 md:px-8 w-full snap-x snap-mandatory"
                     style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}
                 >
                     {cards.map((card, index) => (
-                        <div key={index} className="snap-center shrink-0">
+                        <div key={index} className="snap-center shrink-0 min-w-full flex justify-center md:min-w-0 md:w-[calc(50%-1rem)] lg:w-[calc(33.33%-1rem)]">
                             <GetToKnowUs2Card
                                 image={card.image}
                                 price={card.price}
@@ -110,14 +110,14 @@ const GetToKnowUs2 = () => {
                 {/* Right Arrow */}
                 <button
                     onClick={scrollRight}
-                    className="absolute right-4 md:right-10 z-10 w-12 h-12 rounded-full bg-[#2C211A] flex items-center justify-center text-white shadow-lg hover:bg-black transition-colors"
+                    className="hidden md:flex absolute right-4 md:right-10 z-10 w-12 h-12 rounded-full bg-[#2C211A] items-center justify-center text-white shadow-lg hover:bg-black transition-colors"
                 >
                     <FaArrowRight className="text-xl" />
                 </button>
             </div>
 
             {/* Footer Rating Section */}
-            <div className="mt-8 flex items-center gap-2 text-sm font-medium">
+            <div className=" md:flex mt-8 items-center gap-2 text-sm font-medium">
                 <span className="font-bold">Excellent!</span>
                 <div className="flex gap-1 text-[#FAD71B]">
                     <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
