@@ -11,6 +11,7 @@ import GetToKnowUs2 from './pages/GetToKnowUs2'
 import GetToKnowContainer from './pages/GetToKnowContainer'
 import GetToKnowUsPople from './pages/GetToKnowUsPople'
 import GetToNowUsGallery from './pages/GetToNowUsGallery'
+import GetToKnowUs4 from './pages/GetToKnoUs4'
 
 function App() {
 
@@ -68,6 +69,7 @@ function App() {
       <GetToKnowContainer />
       <GetToKnowUsPople />
       <GetToNowUsGallery />
+      <GetToKnowUs4 />
     </div>
   )
 }
