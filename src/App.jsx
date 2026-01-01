@@ -10,6 +10,7 @@ import GetToKnowUs1 from './pages/GetToKnowUs1'
 import GetToKnowUs2 from './pages/GetToKnowUs2'
 import GetToKnowContainer from './pages/GetToKnowContainer'
 import GetToKnowUsPople from './pages/GetToKnowUsPople'
+import GetToNowUsGallery from './pages/GetToNowUsGallery'
 
 function App() {
 
@@ -66,6 +67,7 @@ function App() {
       <GetToKnowUs2 />
       <GetToKnowContainer />
       <GetToKnowUsPople />
+      <GetToNowUsGallery />
     </div>
   )
 }
