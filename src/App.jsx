@@ -12,6 +12,8 @@ import GetToKnowContainer from './pages/GetToKnowContainer'
 import GetToKnowUsPople from './pages/GetToKnowUsPople'
 import GetToNowUsGallery from './pages/GetToNowUsGallery'
 import GetToKnowUs4 from './pages/GetToKnoUs4'
+import GetToKnowUs5 from './pages/GetToKnowUs5'
+import Footer from './pages/Footer'
 
 function App() {
 
@@ -70,6 +72,8 @@ function App() {
       <GetToKnowUsPople />
       <GetToNowUsGallery />
       <GetToKnowUs4 />
+      <GetToKnowUs5 />
+      <Footer />
     </div>
   )
 }
