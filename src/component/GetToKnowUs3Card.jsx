@@ -7,7 +7,7 @@ const GetToKnowUs3Card = ({ firstImage, secondImage, thirdImage }) => {
         <div className="mx-4 bg-[#F5F5F5] p-4 rounded-2xl">
             <div className="relative ">
                 <img src={firstImage} alt="" className="rounded-4xl w-[350px] h-[300px] object-cover" />
-                <div className="flex absolute bg-[#175F71] text-white bottom-10  px-3 py-2 rounded-2xl gap-5">
+                <div className="flex absolute bg-[#175F71] text-white bottom-10 -left-5  px-3 py-2 rounded-2xl gap-5">
                     <div className="flex items-center  gap-2">
                         <FaCalendarAlt className="text-white text-sm" />
                         <p className="text-xs">07 July, 2025</p>

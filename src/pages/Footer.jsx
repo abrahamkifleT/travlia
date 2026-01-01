@@ -96,12 +96,12 @@ const Footer = () => {
                 </div>
 
                 <div className="grid grid-cols-6">
-                    <img src={imageOne} alt="" className="w-full object-cover" />
-                    <img src={imageTwo} alt="" className="w-full object-cover" />
-                    <img src={imageThree} alt="" className="w-full object-cover" />
-                    <img src={imageFour} alt="" className="w-full object-cover" />
-                    <img src={imageFive} alt="" className="w-full object-cover" />
-                    <img src={imageSix} alt="" className="w-full object-cover" />
+                    <img src={imageOne} alt="" className="w-full h-45 object-cover" />
+                    <img src={imageTwo} alt="" className="w-full h-45 object-cover" />
+                    <img src={imageThree} alt="" className="w-full h-45 object-cover" />
+                    <img src={imageFour} alt="" className="w-full h-45 object-cover" />
+                    <img src={imageFive} alt="" className="w-full h-45 object-cover" />
+                    <img src={imageSix} alt="" className="w-full h-45 object-cover" />
                 </div>
 
             </div>
