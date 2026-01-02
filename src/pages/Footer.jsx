@@ -13,7 +13,7 @@ const Footer = () => {
     return (
         <div className="relative bg-black mt-30 flex flex-col items-center justify-center">
             <div className="">
-                <div className="absolute -top-10 left-0 right-0 flex items-center justify-center gap-40 py-5  bg-[#206577] mx-20 px-20 rounded-2xl">
+                <div className="relative md:absolute -top-10 left-0 right-0 flex flex-col md:flex-row items-center justify-center gap-6 md:gap-40 py-5 bg-[#206577] mx-4 md:mx-20 px-6 md:px-20 rounded-2xl">
                     <div className="flex items-center gap-4">
                         {/* phone icon */}
                         <div className="w-10 h-10 rounded-full bg-[#26263E] text-white flex items-center justify-center">
@@ -48,15 +48,15 @@ const Footer = () => {
                     </div>
                 </div>
 
-                <div className="grid grid-cols-5 px-20 pt-24 pb-10">
-                    <div className="col-span-2 flex flex-col text-white">
+                <div className="grid grid-cols-1 md:grid-cols-5 px-6 md:px-20 pt-10 md:pt-24 pb-10 gap-8 md:gap-0">
+                    <div className="md:col-span-2 flex flex-col text-white">
                         <img src={logo} alt="" className="brightness-0 invert w-36 h-12" />
-                        <p className="pt-3 text-2xl">Travel beyond your <br />
-                            imagination, with our Travel <br />
+                        <p className="pt-3 text-2xl">Travel beyond your <br className="hidden md:block" />
+                            imagination, with our Travel <br className="hidden md:block" />
                             Agency!</p>
                         <p className="text-sm pt-5 text-gray-400">
-                            No matter how big your company is, as you expand and <br />
-                            reach new highs you’ll want an agency to have your <br />
+                            No matter how big your company is, as you expand and <br className="hidden md:block" />
+                            reach new highs you’ll want an agency to have your <br className="hidden md:block" />
                             back. One with a process
                         </p>
                     </div>
@@ -95,7 +95,7 @@ const Footer = () => {
                     </div>
                 </div>
 
-                <div className="grid grid-cols-6">
+                <div className="grid grid-cols-2 md:grid-cols-6">
                     <img src={imageOne} alt="" className="w-full h-45 object-cover" />
                     <img src={imageTwo} alt="" className="w-full h-45 object-cover" />
                     <img src={imageThree} alt="" className="w-full h-45 object-cover" />
